@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>Middag idag?</title>
+</head>
+<body id="body1">
+    <h1> Vad skall du äta idag? </h1>
+    <p> Med detta API kan du låta datorn bestämma vad du skall äta idag! </p>
+    <h3> Endpoints: </h3>
+    <p> /newEntry - Genererar random mat innehållande protein, carbs, tillbehör samt dryck och lägger till i listan.</p>
+    <p> /foods - Listar all mat som finns i databasen.</p>
+    <p> /delete/{id} - Tar bort en matpost baserat på ID. Ex. /delete/5</p>
+    <p> /foodsbyid/{id} - Söker fram mat baserat på ID. Ex. /foodsbyid/2</p>
+    <p> Nedan knapp ger dig en random maträtt från den befintliga listan</p>
+
+    <form action="/" method="POST">
+        <h2> Ta fram en random måltid från listan! </h2>
+        <button type="Submit">Vad skall jag äta idag?</button>
+    </form>
+</body>
+</html>
