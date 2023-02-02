@@ -51,7 +51,7 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/index.html");
 });
 
-app.post("/", (req, res) => {
+app.post("/random", (req, res) => {
     var randomId = Math.floor(Math.random() * foods.length);
     var randomFoodItem = getRandomFood(randomId);
     res.set("Content-Type", "text/html");
